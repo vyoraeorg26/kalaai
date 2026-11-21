@@ -1,0 +1,13 @@
+# Never upload local credentials or local Vercel linkage
+.env
+.env.*
+!.env.example
+.vercel
+.git
+node_modules
+npm-debug.log*
+.DS_Store
+
+# Runtime uploads are not durable on Vercel and are not part of this app
+server/uploads/*
+!server/uploads/.gitkeep
